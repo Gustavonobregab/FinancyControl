@@ -13,6 +13,15 @@ app.get('', (req, res) => {
   res.send('Hello World!')
 })
 
+app.get('/months', async (req, res) => {
+  try {
+    const months = await Month.find({})
+    res.status(200).json(months)
+  } catch (error) {
+    res.status(500).json({ message: error.message })
+  }
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
