@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const FinancialSituation = require('./src/models/financialSituationSchema')
 const app = express()
 const port = 3000
 
@@ -21,6 +22,8 @@ app.get('/months', async (req, res) => {
     res.status(500).json({ message: error.message })
   }
 })
+
+app.post('/gastos', async (req, res) => {})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
