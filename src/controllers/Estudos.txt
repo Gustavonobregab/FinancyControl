@@ -1,0 +1,3 @@
+Controller serve apenas para gerenciar a lógica entre a requisicao.
+
+Basicamente para separar a lógica da requisicao

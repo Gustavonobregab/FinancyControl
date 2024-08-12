@@ -14,10 +14,10 @@ app.get('', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/months', async (req, res) => {
+app.get('/financy', async (req, res) => {
   try {
-    const months = await Month.find({})
-    res.status(200).json(months)
+    const financy = await expenses.find({})
+    res.status(200).json(financy)
   } catch (error) {
     res.status(500).json({ message: error.message })
   }
