@@ -4,8 +4,8 @@ const Schema = mongoose.Schema
 const financialSituationSchema = new Schema({
   month: Number,
   year: Number,
-  expenses: Boolean,
-  income: Boolean,
+  expenses: Number,
+  income: Number,
 })
 
 const FinancialSituation = mongoose.model(
