@@ -1,3 +1,0 @@
-Basicamente serve para mapear as requisicoes
-
-Apenas os endpoints da api
